@@ -1,89 +1,25 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		var threw = true;
-/******/ 		try {
-/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 			threw = false;
-/******/ 		} finally {
-/******/ 			if(threw) delete installedModules[moduleId];
-/******/ 		}
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
-/******/ })
-/************************************************************************/
-/******/ ({
+webpackHotUpdate(4,{
 
 /***/ "./lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -658,7 +594,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 105
     }
   }, "deepFreeze"), " from mutation in your tests."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -666,14 +621,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -1010,7 +973,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 59
     }
   }, "const toggleTodo = (todo) => {\n  return {\n    ...todo,\n    completed: !todo.completed\n  };\n};\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -1018,14 +1000,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-describing-state-changes-with-actions.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -1329,7 +1319,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 18
     }
   }, "Now you know the second principle of Redux -- the state is read only. The only way to change the state tree is by dispatching an action. An action is a plain JavaScript object, describing in the minimal way what changed in the application. Whether it is initiated by a network request or by user interaction, any data that gets into the Redux application gets there by actions."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-describing-state-changes-with-actions.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -1337,14 +1346,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-action-creators.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -1865,7 +1882,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 89
     }
   }, "dispatch"), " just like I did before, passing the action."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-action-creators.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -1873,14 +1909,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-container-components-filterlink.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -2892,7 +2936,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 220
     }
   }, "Footer"), " component simple and decoupled from the behavior and the data that its child components need."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-container-components-filterlink.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -2900,14 +2963,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-container-components-visibletodolist-addtodo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -3658,1402 +3729,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 248
     }
   }, "In general, I suggest first trying to extract the presentational component. If there is too much boilerplate passing the props through them, then you can create the containers around them that load the data and specify the behavior."));
-});
+};
 
-/***/ }),
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 
-/***/ "./lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink.md":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
-var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink.md";
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
 
+  if (!reactHotLoader) {
+    return;
+  }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (function (_ref) {
-  var components = _ref.components;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "wrapper",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "In the previous lesson, I extracted the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "Todo"), " and ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "TodoList"), " components from the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "TodoApp"), " component. In this lesson, I will continue extracting other ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "strong",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "presentational components"), " to separate the looks from the behavior."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "Now I want to extract the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "input"), " and the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "button"), " into a separate component called, ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "AddTodo"), " I'm declaring ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "AddTodo"), " as a functional component that doesn't accept any props. I'm going to return these copy pasted ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "input"), " and ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "button"), ", but I'm wrapping them in a ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "div"), " because a component needs to have a single root element."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, "const AddTodo = () => {\n  return (\n    <div>\n      <input ref={node => {\n        this.input = node;\n      }} />\n      <button onClick={() => {\n        store.dispatch({\n          type: 'ADD_TODO',\n          text: this.input.value,\n          id: nextTodoId++\n        });\n        this.input.value = '';\n      }}>\n      Add Todo\n      </button>\n    </div>\n  );\n};\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "The functional components don't have instances. However, instead of using ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "this"), ", I can use a local variable called, ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "input"), ", that I'm going to close over so I can write to it in the callback ref and I can read from it in the event handler."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    }
-  }, "const AddTodo = () => {\n  let input;\n\n  return (\n    <div>\n      <input ref={node => {\n        input = node;\n      }} />\n      <button onClick={() => { ... }}>\n      Add Todo\n      </button>\n    </div>\n  );\n};\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    }
-  }, "Like previously, I want it to be a presentational component and not specify behavior, so I just called the function called, ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    }
-  }, "onAddClick"), " passing the current input value. I make ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    }
-  }, "onAddClick"), " a prop so that the component that uses ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    }
-  }, "AddTodo"), " can specify what happens when that button is clicked."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    }
-  }, "const AddTodo = ({\n  onAddClick\n}) => {\n  let input;\n\n  return (\n    <div>\n      <input ref={node => {\n        input = node;\n      }} />\n      <button onClick={() => {\n        onAddClick(input.value);\n        input.value = '';\n      }}>\n      Add Todo\n      </button>\n    </div>\n  );\n};\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "Again, the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "TodoApp"), " component acts as a ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "strong",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "container component"), " for the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "AddTodo"), ". It specifies that when add button is clicked, we should dispatch an action with the type ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "ADD_TODO"), ", the corresponding text, and the next todo ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }, "id"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    }
-  }, "<AddTodo\n  onAddClick={id =>\n    store.dispatch({\n      type: 'ADD_TODO',\n      id: nextTodoId++,\n      text\n    })\n  } />\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }, "The last component I want to extract today is the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }, "Footer"), ", which contains all these three filter links. I'm creating a new functional component called, ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }, "Footer"), ". I'm not sure which props it needs, so I skip them. I paste the markup. It seems that the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }, "FilterLink"), " need the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }, "visibilityFilter"), ", so I add it as a prop."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    }
-  }, "const Footer = ({\n  visibilityFilter\n}) => (\n  <p>\n    Show:\n    {' '}\n    <FilterLink\n      filter='SHOW_ALL'\n      currentFilter={visibilityFilter}\n    >\n      All\n    </FilterLink>\n\n    ...\n\n  </p>\n)\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "I would like the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "Footer"), " and the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "FilterLink"), " to be presentational components. However, the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "FilterLink"), " includes a short dispatch call. I am replacing it with an ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "onClick"), " call. I pass the filter as the single parameter for the calling component's convenience. I add ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    }
-  }, "onClick"), " to the props."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    }
-  }, "const FilterLink = ({\n  filter,\n  currentFilter,\n  children,\n  onClick\n}) => {\n  return (\n    <a href='#'\n      onClick={e => {\n        e.preventDefault();\n        onClick(filter);\n      }}\n     >\n      {children}\n     </a>\n  );\n};\n\nconst Footer = ({\n  visibilityFilter,\n  onFilterClick\n}) => (\n  <p>\n    Show:\n    {' '}\n    <FilterLink\n      filter='SHOW_ALL'\n      currentFilter={visibilityFilter}\n      onClick={onFilterClick}\n    >\n      All\n    </FilterLink>\n    \n    ...\n\n  </p>\n);\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "Now I need to specify it every time ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "FilterLink"), " is used. I add ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "onFilterClick"), " to the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "Footer"), ". I pass ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "onClick={onFilterClick}"), " for every ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "FilterLink"), " in the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "Footer"), ", so whatever we pass to the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "Footer"), " as ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "onFilterClick"), " prop is going to end up in the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "Filter"), " link as ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    }
-  }, "onClick"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "Now I can use the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "Footer"), " component I just defined inside my ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "TodoApp"), " component. I need to pass to props, one of them is the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "visibilityFilter"), " so it can highlight the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "active"), " link. Another prop is ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "onFilterClick"), " where I say that whenever a ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "filter"), " is clicked, I want to dispatch an action with a type set ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    }
-  }, "visibilityFilter"), " and the filter being clicked."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135
-    }
-  }, "<Footer\n  visibilityFilter={visibilityFilter}\n  onFilterClick={filter =>\n    store.dispatch({\n      type: 'SET_VISIBILITY_FILTER',\n      filter\n    })\n  }\n/>\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    }
-  }, "Finally, I just noticed that the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    }
-  }, "TodoApp"), " component doesn't actually have to be a class. I can turn it into a function. I prefer to do that when possible."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "Instead of ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "a",
-    components: components,
-    parentName: "p",
-    props: {
-      "href": "https://egghead.io/lessons/ecmascript-6-destructuring-assignment"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "destructuring"), " the props inside the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "render"), " method, I am now doing it inside the argument. I can remove now the destructuring. I'm also going to remove the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "render"), " method declaration. The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "visibleTodos"), " are only used in a single place, so I'm moving the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "getVisibleTodos"), " call to the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "TodoList"), " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    }
-  }, "todos"), " prop declaration. Now the body of my function is just a single expression, so I can get rid of the return statement and unindent code to make it look nicer."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    }
-  }, "const TodoApp = ({\n  todos,\n  visibilityFilter\n}) => (\n  <div>\n    <AddTodo ... />\n    <TodoList\n      todos={\n        getVisibleTodos(\n          todos,\n          visibilityFilter\n        )\n      }\n      onTodoClick={ ... }\n    />\n    <Footer ... />\n  </div>\n);\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 166
-    }
-  }, "This concludes the initial refactoring of the todo list application into a single container component called ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 166
-    }
-  }, "TodoApp"), " and many presentational components that are only concerned with how things look."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 167
-    }
-  }, "Let's recap the data flow in this example."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    }
-  }, "We have a single container component called ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    }
-  }, "TodoApp"), ". We re-render it any time the store changes. It receives the keys of the global state object as the props, so it receives the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    }
-  }, "todos"), " and the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    }
-  }, "visibilityFilter"), " values."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169
-    }
-  }, "The first component it renders is called ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169
-    }
-  }, "AddTodo"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170
-    }
-  }, "<AddTodo\n  onAddClick={text =>\n    store.dispatch({\n      type: 'ADD_TODO',\n      id: nextTodoId++,\n      text\n    })\n  }\n/>\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, "AddTodo"), " is a presentational component that renders an ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, "input"), " and a ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, "button"), ". When the button is clicked, it passes the current ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, "input.value"), " to the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 180
-    }
-  }, "onAddClick"), " function."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 181
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 181
-    }
-  }, "const AddTodo = ({\n  onAddClick\n}) => {\n  let input;\n\n  return (\n      <div>\n      <input ref={node => {\n        input = node;\n      }} />\n      <button onClick={() => {\n        onAddClick(input.value);\n        input.value = '';\n      }}>\n      Add Todo\n      </button>\n    </div>\n  );\n}\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, "onAddClick"), " function is a prop for the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, "AddTodo"), " component. In this case, it is specified by the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, "TodoApp"), ", which says that when the button is clicked, it should dispatch an action containing the current text in the action object. Dispatching the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, "AddTodo"), " action will call our reducer, update this store state with the new todos, and re-render the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    }
-  }, "TodoApp"), " component with the new todos."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 202
-    }
-  }, "The todos themselves are rendered by the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 202
-    }
-  }, "TodoList"), " presentational component that receives two props, the currently visible todos and the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 202
-    }
-  }, "onTodoClick"), " callback."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 203
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 203
-    }
-  }, " <TodoList\n      todos={\n        getVisibleTodos(\n          todos,\n          visibilityFilter\n        )\n      }\n      onTodoClick={\n        store.dispatch({\n          type: 'TOGGLE_TODO',\n          id\n        })\n      }\n    />\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "TodoList"), " component receives an array of todos, and it maps over them, rendering individual ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "Todo"), " components. It uses the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "a",
-    components: components,
-    parentName: "p",
-    props: {
-      "href": "https://egghead.io/lessons/ecmascript-6-using-the-es6-spread-operator"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "spread operator"), " to pass every property of the todo object as a prop to   ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "Todo"), " component. It specifies the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "onClick"), " handler as calling ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "onTodoClick"), " with the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "id"), " of the particular ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218
-    }
-  }, "todo"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 219
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 219
-    }
-  }, "const TodoList = ({\n  todos,\n  onTodoClick\n}) => (\n  <ul>\n    {todos.map(todo =>\n      <Todo\n        key={todo.id}\n        {...todo}\n        onClick={() => onTodoClick(todo.id)}\n      />\n    )}\n  </ul>\n);\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234
-    }
-  }, "Todo"), " component is defined above. It is also a presentational component so it doesn't specify the behavior. It says that when a list item is clicked, it should call the on click handler. Being a presentational component it specifies how the component looks in different circumstances. In this case, it uses the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234
-    }
-  }, "completed"), " prop to choose between two different styles of the todo item."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 235
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 235
-    }
-  }, "const Todo = ({\n  onClick,\n  completed,\n  text\n}) => (\n<li\n  onClick={onClick}\n  style={{\n    textDecoration:\n      completed ?\n        'line-through' :\n        'none'\n  }}\n>\n);\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 251
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 251
-    }
-  }, "TodoList"), " is also presentational component. It delegates actually handling the click to ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 251
-    }
-  }, "onTodoClick"), " prop. It passes the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 251
-    }
-  }, "id"), " of the todo being clicked."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 252
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 252
-    }
-  }, "const TodoList = ({\n  todos,\n  onTodoClick\n}) => (\n  <ul>\n    {todos.map( todo =>\n      <Todo\n        key={todo.id}\n        {...todo}\n        onClick{() => onTodoClick(todo.id)}\n      />\n    )}\n  </ul>\n)\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 267
-    }
-  }, "Finally, the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 267
-    }
-  }, "TodoApp"), " component reacts to it by dispatching an action containing the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 267
-    }
-  }, "id"), " of the todo clicked and the type ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 267
-    }
-  }, "TOGGLE_TODO"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 268
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 268
-    }
-  }, "onTodoClick={id =>\nstore.dispatch({\n  type: 'TOGGLE_TODO',\n  id\n})\n}\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 275
-    }
-  }, "The store will call our reducer and update the state of the application, re-rendering the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 275
-    }
-  }, "TodoApp"), " component with the new todos."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 276
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 276
-    }
-  }, "Footer"), " component receives the current ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 276
-    }
-  }, "visibilityFilter"), " as a prop and also receives the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 276
-    }
-  }, "onFilterClick"), " callback that sets the current ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 276
-    }
-  }, "visibilityFilter"), ". "), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 277
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 277
-    }
-  }, "<Footer\n  visibilityFilter={visibilityFilter}\n  onFilterClick={filter =>\n    store.dispatch({\n      type: 'SET_VISIBILITY_FILTER',\n      filter\n    })\n  }\n/>\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 287
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 287
-    }
-  }, "Footer"), " component renders three ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 287
-    }
-  }, "FilterLinks"), ", passing down their respective filter values, the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 287
-    }
-  }, "onClick"), " handler, and the current ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 287
-    }
-  }, "visibilityFilter"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "pre",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 288
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "code",
-    components: components,
-    parentName: "pre",
-    props: {
-      "className": ["language-javascript"]
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 288
-    }
-  }, "const Footer = ({\n  visibilityFilter,\n  onFilterClick\n}) => (\n  <p>\n    Show:\n    {' '}\n    <FilterLink\n      filter='SHOW_ALL'\n      currentFilter={visibilityFilter}\n      onClick={onFilterClick}\n    >\n      All\n    </FilterLink>\n    \n    ...\n\n  </p>\n);\n")), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "FilterLink"), " component being a presentational component doesn't know what to do when it's clicked, so it calls the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "onClick"), " callback, passing the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "filter"), ", which is different for each of those links, as an argument. The ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "Footer"), " delegates handling the click of the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "FilterLink"), " to its own prop, called ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 308
-    }
-  }, "onFilterClick"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 309
-    }
-  }, "Finally, the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 309
-    }
-  }, "TodoApp"), " component being the container component in our application specifies the behavior, which in this case means that when the ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 309
-    }
-  }, "FilterLink"), " is clicked, it should dispatch an action with the type ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 309
-    }
-  }, "SET_VISIBILITY_FILTER"), ", and the new ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "inlineCode",
-    components: components,
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 309
-    }
-  }, "filter"), "."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 310
-    }
-  }, "Separation of the presentational components is not required in Redux, but I recommend this pattern because it decouples your rendering from Redux. So if you later choose to move your project to another framework, such as Relay, you will not have to change all your components because you can keep the presentational components exactly the same."), "\n", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
-    name: "p",
-    components: components,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 311
-    }
-  }, "This approach also has downsides, such as that you have to thread a lot of props through the components to get them to the leaf components, including the callbacks. This problem can be easily solved by introducing many intermediate container components as we will see in the next lesson."));
-});
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-container-components-visibletodolist-addtodo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -5061,14 +3756,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-presentational-components-todo-todolist.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -5785,7 +4488,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 132
     }
   }, "const Todo = ({\n  onClick,\n  completed,\n  text\n}) => (\n<li\n  onClick={onClick}\n  style={{\n    textDecoration:\n      completed ?\n        'line-through' :\n        'none'\n  }}\n>\n  {todo.text}\n</li>\n);\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-extracting-presentational-components-todo-todolist.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -5793,14 +4515,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -6490,7 +5220,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 54
     }
   }, "const TodoApp = () => (\n  <div>\n    <AddTodo />\n    <VisibleTodoList />\n    <Footer />\n  </div>\n)\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -6498,14 +5247,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -7184,7 +5941,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 96
     }
   }, "onClick"), " values."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -7192,14 +5968,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -7862,7 +6646,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 70
     }
   }, "mapDispatchToProps"), ", and its own props."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -7870,14 +6673,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-implementing-combinereducers-from-scratch.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -8315,7 +7126,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 81
     }
   }, "It is not essential to use in Redux, so it is fine if you don't fully understand how it works yet. However, it is a good idea to practice functional programming and understand functions can take other functions as arguments and return other functions, because knowing this will help you get more productive in Redux in the long term."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-implementing-combinereducers-from-scratch.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -8323,14 +7153,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-implementing-store-from-scratch.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -8677,7 +7515,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 46
     }
   }, "createStore"), "  shipped with Redux."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-implementing-store-from-scratch.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -8685,14 +7542,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-explicitly-via-props.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -8999,7 +7864,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 93
     }
   }, "In the future lessons, we will see how to pass this store down to the container components implicitly without introducing the top-level variable."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-explicitly-via-props.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -9007,14 +7891,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-implicitly-via-context.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -10143,7 +9035,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 133
     }
   }, "not stable"), " in React. It has changed before, and it is likely to change again. Try your best not to rely on it too much."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-implicitly-via-context.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -10151,14 +9062,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -10352,7 +9271,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 13
     }
   }, "store"), " updates and dispatch actions."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -10360,14 +9298,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-pure-and-impure-functions.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -10513,7 +9459,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 31
     }
   }, "This is going to be an important distinction because some of the functions that you're going to write in Redux have to be pure, and you need to be mindful of that."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-pure-and-impure-functions.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -10521,14 +9486,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-counter-example.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -10827,7 +9800,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 50
     }
   }, "render"), " function runs anytime the state changes, so the counter gets the current state."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-counter-example.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -10835,14 +9827,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-adding-a-todo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -11929,7 +10929,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 143
     }
   }, "const render = () => {\n  ReactDOM.render(\n    <TodoApp\n      todos={store.getState().todos}\n    />,\n    document.getElementById('root')\n  );\n};\n\nstore.subscribe(render);\nrender();\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-adding-a-todo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -11937,14 +10956,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-filtering-todos.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -13150,7 +12177,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 199
     }
   }, "<p>\n  Show:\n  {' '}\n  <FilterLink\n    filter='SHOW_ALL'\n    currentFilter={visibilityFilter}\n  >\n    All\n  </FilterLink>\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-filtering-todos.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -13158,14 +12204,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-toggling-a-todo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -13719,7 +12773,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 88
     }
   }, "todo.completed"), " field, which we just updated, which is why it re-renders in a cross-child state."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-react-todo-list-example-toggling-a-todo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -13727,14 +12800,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-arrays.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -14001,7 +13082,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 77
     }
   }, "This pattern can be applied many times, and while there is still a single top level reducer managing the state of your app, you will find it convenient to express it as many reducers call on each other, each contribution to a part of the applications state tree."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-arrays.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -14009,14 +13109,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-combinereducers.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -14285,7 +13393,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 47
     }
   }, "combineReducers"), " utility function."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-combinereducers.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -14293,14 +13420,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-objects.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -14626,7 +13761,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 45
     }
   }, "visibilityFilter"), " field has been updated."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-reducer-composition-with-objects.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -14634,14 +13788,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -14992,7 +14154,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 36
     }
   }, "const render = () => {\n  document.body.innerText = store.getState();\n};\n\nstore.subscribe(render);\nrender();\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -15000,14 +14181,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-the-reducer-function.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -15128,7 +14317,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 13
     }
   }, "Now you know the third and the last principle of Redux. To describe state mutations, you have to write a function that takes the previous state of the app, the action being dispatched, and returns the next state of the app. This function has to be pure. This function is called the Reducer."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-the-reducer-function.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -15136,14 +14344,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-the-single-immutable-state-tree.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -15331,7 +14547,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 14
     }
   }, "single object"), ", we call the state or the state tree."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-the-single-immutable-state-tree.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -15339,14 +14574,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-counter-reducer-with-tests.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -15887,7 +15130,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 68
     }
   }, "const counter = (state = 0, action) => {\n  switch (action.type) {\n    case 'INCREMENT':\n      return state + 1;\n    case 'DECREMENT':\n      return state - 1;\n    default:\n      return state;\n  }\n}\n")));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-counter-reducer-with-tests.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -15895,14 +15157,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -16439,7 +15709,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 106
     }
   }, "Finally, we compare the return value to an array with a single todo item to make sure that the reducer works as intended. The equality check passes. This makes the test successful."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -16447,14 +15736,22 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("@mdx-js/tag");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__ = __webpack_require__("./node_modules/@mdx-js/tag/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mdx_js_tag___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__);
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-todo-list-reducer-toggling-a-todo.md";
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var _default = function _default(_ref) {
   var components = _ref.components;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__mdx_js_tag__["MDXTag"], {
     name: "wrapper",
@@ -16873,7 +16170,26 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
       lineNumber: 79
     }
   }, "Now both of our tests run successfully. We have an implementation of the reducer that can add and toggle todos."));
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lessons/javascript-redux-writing-a-todo-list-reducer-toggling-a-todo.md");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -16882,45 +16198,46 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/lesson
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lessons_javascript_redux_the_single_immutable_state_tree_md__ = __webpack_require__("./lessons/javascript-redux-the-single-immutable-state-tree.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lessons_javascript_redux_describing_state_changes_with_actions_md__ = __webpack_require__("./lessons/javascript-redux-describing-state-changes-with-actions.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lessons_javascript_redux_pure_and_impure_functions_md__ = __webpack_require__("./lessons/javascript-redux-pure-and-impure-functions.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lessons_javascript_redux_the_reducer_function_md__ = __webpack_require__("./lessons/javascript-redux-the-reducer-function.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lessons_javascript_redux_writing_a_counter_reducer_with_tests_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-counter-reducer-with-tests.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lessons_javascript_redux_store_methods_getstate_dispatch_and_subscribe_md__ = __webpack_require__("./lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lessons_javascript_redux_implementing_store_from_scratch_md__ = __webpack_require__("./lessons/javascript-redux-implementing-store-from-scratch.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lessons_javascript_redux_react_counter_example_md__ = __webpack_require__("./lessons/javascript-redux-react-counter-example.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__lessons_javascript_redux_avoiding_array_mutations_with_concat_slice_and_spread_md__ = __webpack_require__("./lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lessons_javascript_redux_avoiding_object_mutations_with_object_assign_and_spread_md__ = __webpack_require__("./lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lessons_javascript_redux_writing_a_todo_list_reducer_adding_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lessons_javascript_redux_writing_a_todo_list_reducer_toggling_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-todo-list-reducer-toggling-a-todo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lessons_javascript_redux_reducer_composition_with_arrays_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-arrays.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__lessons_javascript_redux_reducer_composition_with_objects_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-objects.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lessons_javascript_redux_reducer_composition_with_combinereducers_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-combinereducers.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__lessons_javascript_redux_implementing_combinereducers_from_scratch_md__ = __webpack_require__("./lessons/javascript-redux-implementing-combinereducers-from-scratch.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__lessons_javascript_redux_react_todo_list_example_adding_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-adding-a-todo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__lessons_javascript_redux_react_todo_list_example_toggling_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-toggling-a-todo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__lessons_javascript_redux_react_todo_list_example_filtering_todos_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-filtering-todos.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_extracting_presentational_components_todo_todolist_md__ = __webpack_require__("./lessons/javascript-redux-extracting-presentational-components-todo-todolist.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__lessons_javascript_redux_extracting_presentational_components_addtodo_footer_filterlink_md__ = __webpack_require__("./lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__lessons_javascript_redux_extracting_container_components_filterlink_md__ = __webpack_require__("./lessons/javascript-redux-extracting-container-components-filterlink.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_extracting_container_components_visibletodolist_addtodo_md__ = __webpack_require__("./lessons/javascript-redux-extracting-container-components-visibletodolist-addtodo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__lessons_javascript_redux_passing_the_store_down_explicitly_via_props_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-explicitly-via-props.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__lessons_javascript_redux_passing_the_store_down_implicitly_via_context_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-implicitly-via-context.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__lessons_javascript_redux_passing_the_store_down_with_provider_from_react_redux_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_visibletodolist_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_addtodo_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_footerlink_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__lessons_javascript_redux_extracting_action_creators_md__ = __webpack_require__("./lessons/javascript-redux-extracting-action-creators.md");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lessons_javascript_redux_the_single_immutable_state_tree_md__ = __webpack_require__("./lessons/javascript-redux-the-single-immutable-state-tree.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lessons_javascript_redux_describing_state_changes_with_actions_md__ = __webpack_require__("./lessons/javascript-redux-describing-state-changes-with-actions.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lessons_javascript_redux_pure_and_impure_functions_md__ = __webpack_require__("./lessons/javascript-redux-pure-and-impure-functions.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lessons_javascript_redux_the_reducer_function_md__ = __webpack_require__("./lessons/javascript-redux-the-reducer-function.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lessons_javascript_redux_writing_a_counter_reducer_with_tests_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-counter-reducer-with-tests.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lessons_javascript_redux_store_methods_getstate_dispatch_and_subscribe_md__ = __webpack_require__("./lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lessons_javascript_redux_implementing_store_from_scratch_md__ = __webpack_require__("./lessons/javascript-redux-implementing-store-from-scratch.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lessons_javascript_redux_react_counter_example_md__ = __webpack_require__("./lessons/javascript-redux-react-counter-example.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lessons_javascript_redux_avoiding_array_mutations_with_concat_slice_and_spread_md__ = __webpack_require__("./lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lessons_javascript_redux_avoiding_object_mutations_with_object_assign_and_spread_md__ = __webpack_require__("./lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__lessons_javascript_redux_writing_a_todo_list_reducer_adding_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lessons_javascript_redux_writing_a_todo_list_reducer_toggling_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-writing-a-todo-list-reducer-toggling-a-todo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lessons_javascript_redux_reducer_composition_with_arrays_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-arrays.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lessons_javascript_redux_reducer_composition_with_objects_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-objects.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lessons_javascript_redux_reducer_composition_with_combinereducers_md__ = __webpack_require__("./lessons/javascript-redux-reducer-composition-with-combinereducers.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__lessons_javascript_redux_implementing_combinereducers_from_scratch_md__ = __webpack_require__("./lessons/javascript-redux-implementing-combinereducers-from-scratch.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lessons_javascript_redux_react_todo_list_example_adding_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-adding-a-todo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__lessons_javascript_redux_react_todo_list_example_toggling_a_todo_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-toggling-a-todo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__lessons_javascript_redux_react_todo_list_example_filtering_todos_md__ = __webpack_require__("./lessons/javascript-redux-react-todo-list-example-filtering-todos.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__lessons_javascript_redux_extracting_presentational_components_todo_todolist_md__ = __webpack_require__("./lessons/javascript-redux-extracting-presentational-components-todo-todolist.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__lessons_javascript_redux_extracting_presentational_components_addtodo_footer_filterlink_md__ = __webpack_require__("./lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_extracting_container_components_filterlink_md__ = __webpack_require__("./lessons/javascript-redux-extracting-container-components-filterlink.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__lessons_javascript_redux_extracting_container_components_visibletodolist_addtodo_md__ = __webpack_require__("./lessons/javascript-redux-extracting-container-components-visibletodolist-addtodo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__lessons_javascript_redux_passing_the_store_down_explicitly_via_props_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-explicitly-via-props.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_passing_the_store_down_implicitly_via_context_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-implicitly-via-context.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__lessons_javascript_redux_passing_the_store_down_with_provider_from_react_redux_md__ = __webpack_require__("./lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_visibletodolist_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_addtodo_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_footerlink_md__ = __webpack_require__("./lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__lessons_javascript_redux_extracting_action_creators_md__ = __webpack_require__("./lessons/javascript-redux-extracting-action-creators.md");
 var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/pages/index.js";
 
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 
 
@@ -16952,254 +16269,209 @@ var _jsxFileName = "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/pages/
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+
+var _default = function _default() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
-    },
-    className: "jsx-1031074951"
-  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_head___default.a, {
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__lessons_javascript_redux_the_single_immutable_state_tree_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     }
-  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
-    name: "viewport",
-    content: "width=device-width, initial-scale=1",
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__lessons_javascript_redux_describing_state_changes_with_actions_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
-    },
-    className: "jsx-1031074951"
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
-    charSet: "utf-8",
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__lessons_javascript_redux_pure_and_impure_functions_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
-    },
-    className: "jsx-1031074951"
-  })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-    styleId: "1031074951",
-    css: "img{max-width:800px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXFDdUIsQUFHeUIsZ0JBQ2xCIiwiZmlsZSI6InBhZ2VzL2luZGV4LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qb2VsL0NvZGUvZWdnaGVhZC9sZWFybnJlZHV4d2l0aGRhbmFicmFtb3YuY29tIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xuaW1wb3J0IFNpbmdsZUltbXV0YWJsZVRyZWUgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXRoZS1zaW5nbGUtaW1tdXRhYmxlLXN0YXRlLXRyZWUubWQnXG5pbXBvcnQgU3RhdGVDaGFuZ2VzV2l0aEFjdGlvbnMgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LWRlc2NyaWJpbmctc3RhdGUtY2hhbmdlcy13aXRoLWFjdGlvbnMubWQnXG5pbXBvcnQgUHVyZUFuZEltcHVyZUZ1bmN0aW9ucyBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtcHVyZS1hbmQtaW1wdXJlLWZ1bmN0aW9ucy5tZCdcbmltcG9ydCBSZWR1Y2VyRnVuY3Rpb24gZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXRoZS1yZWR1Y2VyLWZ1bmN0aW9uLm1kJ1xuaW1wb3J0IENvdW50ZXJSZWR1Y2VyIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC13cml0aW5nLWEtY291bnRlci1yZWR1Y2VyLXdpdGgtdGVzdHMubWQnXG5pbXBvcnQgRGlzcGF0Y2hBbmRTdWJzY3JpYmUgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXN0b3JlLW1ldGhvZHMtZ2V0c3RhdGUtZGlzcGF0Y2gtYW5kLXN1YnNjcmliZS5tZCdcbmltcG9ydCBJbXBsZW1lbnRTdG9yZSBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtaW1wbGVtZW50aW5nLXN0b3JlLWZyb20tc2NyYXRjaC5tZCdcbmltcG9ydCBDb3VudGVyRXhhbXBsZSBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtcmVhY3QtY291bnRlci1leGFtcGxlLm1kJ1xuaW1wb3J0IEF2b2lkaW5nQXJyYXlNdXRhdGlvbnMgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LWF2b2lkaW5nLWFycmF5LW11dGF0aW9ucy13aXRoLWNvbmNhdC1zbGljZS1hbmQtc3ByZWFkLm1kJ1xuaW1wb3J0IEF2b2lkaW5nT2JqZWN0TXV0YXRpb25zIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1hdm9pZGluZy1vYmplY3QtbXV0YXRpb25zLXdpdGgtb2JqZWN0LWFzc2lnbi1hbmQtc3ByZWFkLm1kJ1xuaW1wb3J0IFRvZG9MaXN0UmVkdWNlckFkZFRvZG8gZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXdyaXRpbmctYS10b2RvLWxpc3QtcmVkdWNlci1hZGRpbmctYS10b2RvLm1kJ1xuaW1wb3J0IFRvZG9MaXN0UmVkdWNlclRvZ2dsZVRvZG8gZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXdyaXRpbmctYS10b2RvLWxpc3QtcmVkdWNlci10b2dnbGluZy1hLXRvZG8ubWQnXG5pbXBvcnQgUmVkdWNlckNvbXBvc2l0aW9uQXJyYXlzIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1yZWR1Y2VyLWNvbXBvc2l0aW9uLXdpdGgtYXJyYXlzLm1kJ1xuaW1wb3J0IFJlZHVjZXJDb21wb3NpdGlvbk9iamVjdHMgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXJlZHVjZXItY29tcG9zaXRpb24td2l0aC1vYmplY3RzLm1kJ1xuaW1wb3J0IFJlZHVjZXJDb21wb3NpdGlvbkNvbWJpbmUgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXJlZHVjZXItY29tcG9zaXRpb24td2l0aC1jb21iaW5lcmVkdWNlcnMubWQnXG5pbXBvcnQgSW1wbGVtZW50Q29tYmluZVJlZHVjZXJzIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1pbXBsZW1lbnRpbmctY29tYmluZXJlZHVjZXJzLWZyb20tc2NyYXRjaC5tZCdcbmltcG9ydCBBZGRUb2RvIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1yZWFjdC10b2RvLWxpc3QtZXhhbXBsZS1hZGRpbmctYS10b2RvLm1kJ1xuaW1wb3J0IFRvZ2dsZVRvZG8gZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXJlYWN0LXRvZG8tbGlzdC1leGFtcGxlLXRvZ2dsaW5nLWEtdG9kby5tZCdcbmltcG9ydCBGaWx0ZXJpbmdUb2RvcyBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtcmVhY3QtdG9kby1saXN0LWV4YW1wbGUtZmlsdGVyaW5nLXRvZG9zLm1kJ1xuaW1wb3J0IEV4dHJhY3RQcmVzZW50YXRpb25hbFRvZG9MaXN0IGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1leHRyYWN0aW5nLXByZXNlbnRhdGlvbmFsLWNvbXBvbmVudHMtdG9kby10b2RvbGlzdC5tZCdcbmltcG9ydCBFeHRyYWN0UHJlc2VudGF0aW9uYWxGaWx0ZXJMaW5rIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1leHRyYWN0aW5nLXByZXNlbnRhdGlvbmFsLWNvbXBvbmVudHMtYWRkdG9kby1mb290ZXItZmlsdGVybGluay5tZCdcbmltcG9ydCBFeHRyYWN0Q29udGFpbmVyRmlsdGVyTGluayBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtZXh0cmFjdGluZy1jb250YWluZXItY29tcG9uZW50cy1maWx0ZXJsaW5rLm1kJ1xuaW1wb3J0IEV4dHJhY3RDb250YWluZXJBZGRUb2RvIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1leHRyYWN0aW5nLWNvbnRhaW5lci1jb21wb25lbnRzLXZpc2libGV0b2RvbGlzdC1hZGR0b2RvLm1kJ1xuaW1wb3J0IFBhc3NTdG9yZVZpYVByb3BzIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1wYXNzaW5nLXRoZS1zdG9yZS1kb3duLWV4cGxpY2l0bHktdmlhLXByb3BzLm1kJ1xuaW1wb3J0IFBhc3NTdG9yZVZpYUNvbnRleHQgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LXBhc3NpbmctdGhlLXN0b3JlLWRvd24taW1wbGljaXRseS12aWEtY29udGV4dC5tZCdcbmltcG9ydCBQYXNzU3RvcmVWaWFQcm92aWRlciBmcm9tICcuLi9sZXNzb25zL2phdmFzY3JpcHQtcmVkdXgtcGFzc2luZy10aGUtc3RvcmUtZG93bi13aXRoLXByb3ZpZGVyLWZyb20tcmVhY3QtcmVkdXgubWQnXG5pbXBvcnQgR2VuZXJhdGVXaXRoQ29ubmVjdFRvZG9MaXN0IGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1nZW5lcmF0aW5nLWNvbnRhaW5lcnMtd2l0aC1jb25uZWN0LWZyb20tcmVhY3QtcmVkdXgtdmlzaWJsZXRvZG9saXN0Lm1kJ1xuaW1wb3J0IEdlbmVyYXRlV2l0aENvbm5lY3RBZGRUb2RvIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1nZW5lcmF0aW5nLWNvbnRhaW5lcnMtd2l0aC1jb25uZWN0LWZyb20tcmVhY3QtcmVkdXgtYWRkdG9kby5tZCdcbmltcG9ydCBHZW5lcmF0ZVdpdGhDb25uZWN0Rm9vdGVyIGZyb20gJy4uL2xlc3NvbnMvamF2YXNjcmlwdC1yZWR1eC1nZW5lcmF0aW5nLWNvbnRhaW5lcnMtd2l0aC1jb25uZWN0LWZyb20tcmVhY3QtcmVkdXgtZm9vdGVybGluay5tZCdcbmltcG9ydCBFeHRyYWN0QWN0aW9uQ3JlYXRvcnMgZnJvbSAnLi4vbGVzc29ucy9qYXZhc2NyaXB0LXJlZHV4LWV4dHJhY3RpbmctYWN0aW9uLWNyZWF0b3JzLm1kJ1xuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxuICA8ZGl2PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBpbWcge1xuICAgICAgICBtYXgtd2lkdGg6IDgwMHB4O1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgICA8aDE+TGVhcm4gUmVkdXggd2l0aCBEYW4gQWJyYW1vdjwvaDE+XG4gICAgPHA+XG4gICAgICA8YSBocmVmPVwiaHR0cHM6Ly9lZ2doZWFkLmlvL2xlc3NvbnMvcmVhY3QtcmVkdXgtdGhlLXNpbmdsZS1pbW11dGFibGUtc3RhdGUtdHJlZT91dG1fc291cmNlPW1pY3Jvc2l0ZVwiPlxuICAgICAgICB3YXRjaCB0aGUgZWNyZWVuY2FzdHMgb24gZWdnaGVhZC5pb1xuICAgICAgPC9hPlxuICAgIDwvcD5cbiAgICA8ZGl2IHN0eWxlPXt7IG1heFdpZHRoOiAnODI1cHgnIH19PlxuICAgICAgPFNpbmdsZUltbXV0YWJsZVRyZWUgLz5cbiAgICAgIDxTdGF0ZUNoYW5nZXNXaXRoQWN0aW9ucyAvPlxuICAgICAgPFB1cmVBbmRJbXB1cmVGdW5jdGlvbnMgLz5cbiAgICAgIDxSZWR1Y2VyRnVuY3Rpb24gLz5cbiAgICAgIDxDb3VudGVyUmVkdWNlciAvPlxuICAgICAgPERpc3BhdGNoQW5kU3Vic2NyaWJlIC8+XG4gICAgICA8SW1wbGVtZW50U3RvcmUgLz5cbiAgICAgIDxDb3VudGVyRXhhbXBsZSAvPlxuICAgICAgPEF2b2lkaW5nQXJyYXlNdXRhdGlvbnMgLz5cbiAgICAgIDxBdm9pZGluZ09iamVjdE11dGF0aW9ucyAvPlxuICAgICAgPFRvZG9MaXN0UmVkdWNlckFkZFRvZG8gLz5cbiAgICAgIDxUb2RvTGlzdFJlZHVjZXJUb2dnbGVUb2RvIC8+XG4gICAgICA8UmVkdWNlckNvbXBvc2l0aW9uQXJyYXlzIC8+XG4gICAgICA8UmVkdWNlckNvbXBvc2l0aW9uT2JqZWN0cyAvPlxuICAgICAgPFJlZHVjZXJDb21wb3NpdGlvbkNvbWJpbmUgLz5cbiAgICAgIDxJbXBsZW1lbnRDb21iaW5lUmVkdWNlcnMgLz5cbiAgICAgIDxBZGRUb2RvIC8+XG4gICAgICA8VG9nZ2xlVG9kbyAvPlxuICAgICAgPEZpbHRlcmluZ1RvZG9zIC8+XG4gICAgICA8RXh0cmFjdFByZXNlbnRhdGlvbmFsVG9kb0xpc3QgLz5cbiAgICAgIDxFeHRyYWN0Q29udGFpbmVyRmlsdGVyTGluayAvPlxuICAgICAgPEV4dHJhY3RDb250YWluZXJGaWx0ZXJMaW5rIC8+XG4gICAgICA8RXh0cmFjdENvbnRhaW5lckFkZFRvZG8gLz5cbiAgICAgIDxQYXNzU3RvcmVWaWFQcm9wcyAvPlxuICAgICAgPFBhc3NTdG9yZVZpYUNvbnRleHQgLz5cbiAgICAgIDxQYXNzU3RvcmVWaWFQcm92aWRlciAvPlxuICAgICAgPEdlbmVyYXRlV2l0aENvbm5lY3RUb2RvTGlzdCAvPlxuICAgICAgPEdlbmVyYXRlV2l0aENvbm5lY3RBZGRUb2RvIC8+XG4gICAgICA8R2VuZXJhdGVXaXRoQ29ubmVjdEZvb3RlciAvPlxuICAgICAgPEV4dHJhY3RBY3Rpb25DcmVhdG9ycyAvPlxuICAgIDwvZGl2PlxuICA8L2Rpdj5cbilcbiJdfQ== */\n/*@ sourceURL=pages/index.js */"
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h1", {
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__lessons_javascript_redux_the_reducer_function_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__lessons_javascript_redux_writing_a_counter_reducer_with_tests_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__lessons_javascript_redux_store_methods_getstate_dispatch_and_subscribe_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__lessons_javascript_redux_implementing_store_from_scratch_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__lessons_javascript_redux_react_counter_example_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__lessons_javascript_redux_avoiding_array_mutations_with_concat_slice_and_spread_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__lessons_javascript_redux_avoiding_object_mutations_with_object_assign_and_spread_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
-    },
-    className: "jsx-1031074951"
-  }, "Learn Redux with Dan Abramov"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("p", {
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__lessons_javascript_redux_writing_a_todo_list_reducer_adding_a_todo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
-    },
-    className: "jsx-1031074951"
-  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
-    href: "https://egghead.io/lessons/react-redux-the-single-immutable-state-tree?utm_source=microsite",
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__lessons_javascript_redux_writing_a_todo_list_reducer_toggling_a_todo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
-    },
-    className: "jsx-1031074951"
-  }, "watch the ecreencasts on egghead.io")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-    style: {
-      maxWidth: '825px'
-    },
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_13__lessons_javascript_redux_reducer_composition_with_arrays_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__lessons_javascript_redux_reducer_composition_with_objects_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_15__lessons_javascript_redux_reducer_composition_with_combinereducers_md__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_16__lessons_javascript_redux_implementing_combinereducers_from_scratch_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
-    },
-    className: "jsx-1031074951"
-  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__lessons_javascript_redux_the_single_immutable_state_tree_md__["a" /* default */], {
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_17__lessons_javascript_redux_react_todo_list_example_adding_a_todo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__lessons_javascript_redux_describing_state_changes_with_actions_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_18__lessons_javascript_redux_react_todo_list_example_toggling_a_todo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__lessons_javascript_redux_pure_and_impure_functions_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_19__lessons_javascript_redux_react_todo_list_example_filtering_todos_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__lessons_javascript_redux_the_reducer_function_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_20__lessons_javascript_redux_extracting_presentational_components_todo_todolist_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__lessons_javascript_redux_writing_a_counter_reducer_with_tests_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__lessons_javascript_redux_store_methods_getstate_dispatch_and_subscribe_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__lessons_javascript_redux_implementing_store_from_scratch_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_23__lessons_javascript_redux_extracting_container_components_visibletodolist_addtodo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__lessons_javascript_redux_react_counter_example_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_24__lessons_javascript_redux_passing_the_store_down_explicitly_via_props_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__lessons_javascript_redux_avoiding_array_mutations_with_concat_slice_and_spread_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_passing_the_store_down_implicitly_via_context_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__lessons_javascript_redux_avoiding_object_mutations_with_object_assign_and_spread_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_26__lessons_javascript_redux_passing_the_store_down_with_provider_from_react_redux_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_13__lessons_javascript_redux_writing_a_todo_list_reducer_adding_a_todo_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_27__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_visibletodolist_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__lessons_javascript_redux_writing_a_todo_list_reducer_toggling_a_todo_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_28__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_addtodo_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_15__lessons_javascript_redux_reducer_composition_with_arrays_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_29__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_footerlink_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_16__lessons_javascript_redux_reducer_composition_with_objects_md__["a" /* default */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_30__lessons_javascript_redux_extracting_action_creators_md__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
     }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_17__lessons_javascript_redux_reducer_composition_with_combinereducers_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_18__lessons_javascript_redux_implementing_combinereducers_from_scratch_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_19__lessons_javascript_redux_react_todo_list_example_adding_a_todo_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_20__lessons_javascript_redux_react_todo_list_example_toggling_a_todo_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_21__lessons_javascript_redux_react_todo_list_example_filtering_todos_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_extracting_presentational_components_todo_todolist_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_24__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_24__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_extracting_container_components_visibletodolist_addtodo_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_26__lessons_javascript_redux_passing_the_store_down_explicitly_via_props_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_27__lessons_javascript_redux_passing_the_store_down_implicitly_via_context_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_28__lessons_javascript_redux_passing_the_store_down_with_provider_from_react_redux_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_29__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_visibletodolist_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_30__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_addtodo_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_31__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_footerlink_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    }
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_32__lessons_javascript_redux_extracting_action_creators_md__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    }
   })));
-});
+};
 
-/***/ }),
+/* harmony default export */ __webpack_exports__["default"] = (_default);
+;
 
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
 
-module.exports = __webpack_require__("./pages/index.js");
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
 
+  if (!reactHotLoader) {
+    return;
+  }
 
-/***/ }),
+  reactHotLoader.register(_default, "default", "/Users/joel/Code/egghead/learnreduxwithdanabramov.com/pages/index.js");
+  leaveModule(module);
+})();
 
-/***/ "@mdx-js/tag":
-/***/ (function(module, exports) {
+;
+    (function (Component, route) {
+      if(!Component) return
+      if (false) return
+      module.hot.accept()
+      Component.__route = route
 
-module.exports = require("@mdx-js/tag");
+      if (module.hot.status() === 'idle') return
 
-/***/ }),
+      var components = next.router.components
+      for (var r in components) {
+        if (!components.hasOwnProperty(r)) continue
 
-/***/ "next/head":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "styled-jsx/style":
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
+        if (components[r].Component.__route === route) {
+          next.router.update(r, Component)
+        }
+      }
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+  
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ })
 
-/******/ });
-//# sourceMappingURL=index.js.map
+})
+//# sourceMappingURL=4.7e8215904618c2f89662.hot-update.js.map
