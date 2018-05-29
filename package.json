@@ -1,0 +1,26 @@
+{
+  "name": "learnreduxwithdanabramov.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggheadio/learnreduxwithdanabramov.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eggheadio/learnreduxwithdanabramov.com/issues"
+  },
+  "homepage": "https://github.com/eggheadio/learnreduxwithdanabramov.com#readme",
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
