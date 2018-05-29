@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "now": {
+    "alias": "learnreduxwithdanabramov.com"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
