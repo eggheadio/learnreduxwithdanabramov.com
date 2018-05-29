@@ -34,7 +34,10 @@ export default () => (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="description" content="Learn how to use Redux in your React apps in the tutorial from the creator of Redux, Dan Abramov.">
+      <meta
+        name="description"
+        content="Learn how to use Redux in your React apps in the tutorial from the creator of Redux, Dan Abramov."
+      />
       <title>Learn Redux with Dan Abramov</title>
     </Head>
     <style jsx global>{`
