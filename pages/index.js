@@ -90,7 +90,7 @@ class App extends Component {
                 text-decoration: none;
                 padding: 10px;
               `}
-              href="https://egghead.io/lessons/react-redux-the-single-immutable-state-tree?utm_source=microsite"
+              href="https://egghead.io/courses/getting-started-with-redux?utm_source=microsite"
             >
               watch the screencasts on egghead.io
             </a>
@@ -103,6 +103,31 @@ class App extends Component {
             `}
           >
             <CourseDescription />
+          </div>
+          <div
+            className={css`
+              display: flex;
+              max-width: 400px;
+              padding-top: 50px;
+              justify-content: center;
+              align-items: center;
+            `}
+          >
+            <img
+              className={css`
+                width: 120px;
+                height: 120px;
+              `}
+              src="/static/dan-abramov-photo.png"
+              alt="Dan Abramov"
+            />
+            <div
+              className={css`
+                flex-grow: 2;
+                padding: 15px;
+              `}
+            />
+            Dan Abramov works at Facebook on React. He is the co-author of Redux and Create React App.
           </div>
         </div>
 

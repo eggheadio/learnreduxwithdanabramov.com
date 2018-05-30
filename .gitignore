@@ -45,3 +45,4 @@ npm-debug.log*
 /public/packs-test
 /node_modules
 dump.sql.gz
+.next/

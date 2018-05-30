@@ -29,8 +29,33 @@ export default () => (
             padding-top: 50px;
           `}
         >
-          <div>
-            <h3>{capitalize(lesson.title)}</h3>
+          <div
+            className={css`
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+            `}
+          >
+            <div>
+              <h3>{capitalize(lesson.title)}</h3>
+            </div>
+
+            <div>
+              <a
+                className={css`
+                  background: black;
+                  color: white;
+                  font-size: 14px;
+                  text-decoration: none;
+                  padding: 10px;
+                `}
+                href={`https://egghead.io/lessons/${lesson.slug}??utm_source=microsite`}
+              >
+                watch this lesson
+              </a>
+            </div>
           </div>
           <LessonWrapper>
             <Lesson />
