@@ -1,83 +1,5 @@
 webpackHotUpdate(5,{
 
-/***/ "./node_modules/babel-runtime/core-js/get-iterator.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/is-iterable.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/map.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/object/create.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/object/define-property.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/object/get-prototype-of.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/object/keys.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/object/set-prototype-of.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/symbol.js":
-false,
-
-/***/ "./node_modules/babel-runtime/core-js/symbol/iterator.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/classCallCheck.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/createClass.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/inherits.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/slicedToArray.js":
-false,
-
-/***/ "./node_modules/babel-runtime/helpers/typeof.js":
-false,
-
-/***/ "./node_modules/core-js/library/fn/map.js":
-false,
-
-/***/ "./node_modules/core-js/library/modules/es6.map.js":
-false,
-
-/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
-false,
-
-/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
-false,
-
-/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
-false,
-
-/***/ "./node_modules/string-hash/index.js":
-false,
-
-/***/ "./node_modules/styled-jsx/dist/lib/stylesheet.js":
-false,
-
-/***/ "./node_modules/styled-jsx/dist/style.js":
-false,
-
-/***/ "./node_modules/styled-jsx/dist/stylesheet-registry.js":
-false,
-
-/***/ "./node_modules/styled-jsx/style.js":
-false,
-
 /***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -187,6 +109,8 @@ if (typeof window !== 'undefined') {
   Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["a" /* hydrate */])(window.__NEXT_DATA__.ids);
 }
 
+Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["b" /* injectGlobal */])("html,body{padding:3rem 1rem;margin:0;background:papayawhip;min-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:24px;}img{max-width:800px;}pre{background:#fafafa;padding:25px;}.hljs-comment,.hljs-quote{color:#969896;}/* Tomorrow Red */\n  .hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-deletion{color:#cc6666;}/* Tomorrow Orange */\n  .hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-meta,.hljs-link{color:#de935f;}/* Tomorrow Yellow */\n  .hljs-attribute{color:#f0c674;}/* Tomorrow Green */\n  .hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition{color:#b5bd68;}/* Tomorrow Blue */\n  .hljs-title,.hljs-section{color:#81a2be;}/* Tomorrow Purple */\n  .hljs-keyword,.hljs-selector-tag{color:#b294bb;}.hljs{display:block;overflow-x:auto;background:#1d1f21;color:#c5c8c6;padding:0.5em;}.hljs-emphasis{font-style:italic;}.hljs-strong{font-weight:bold;}");
+
 var App =
 /*#__PURE__*/
 function (_Component) {
@@ -221,219 +145,219 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 148
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_next_head___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 149
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "viewport",
         content: "width=device-width, initial-scale=1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 150
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         "http-equiv": "Content-Type",
         content: "text/html; charset=utf-8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 151
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "google-site-verification",
         content: "IIrF63zU-1tJ9wTakA176fZd_hNrbW1QD_5oticuUv0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 152
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "description",
         content: "Learn how to use Redux in your React apps in the tutorial from the creator of Redux, Dan Abramov.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 153
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 157
         }
       }, "Learn Redux with Dan Abramov")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 160
         }
       }, "Learn Redux with Dan Abramov"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 161
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
         href: "https://egghead.io/lessons/react-redux-the-single-immutable-state-tree?utm_source=microsite",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 162
         }
-      }, "watch the ecreencasts on egghead.io")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      }, "watch the screencasts on egghead.io")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         style: {
           maxWidth: '825px'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 166
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__lessons_javascript_redux_the_single_immutable_state_tree_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 167
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__lessons_javascript_redux_describing_state_changes_with_actions_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 168
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__lessons_javascript_redux_pure_and_impure_functions_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 169
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__lessons_javascript_redux_the_reducer_function_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 170
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__lessons_javascript_redux_writing_a_counter_reducer_with_tests_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 171
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__lessons_javascript_redux_store_methods_getstate_dispatch_and_subscribe_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 172
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__lessons_javascript_redux_implementing_store_from_scratch_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 173
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__lessons_javascript_redux_react_counter_example_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 174
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__lessons_javascript_redux_avoiding_array_mutations_with_concat_slice_and_spread_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 175
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_13__lessons_javascript_redux_avoiding_object_mutations_with_object_assign_and_spread_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 176
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__lessons_javascript_redux_writing_a_todo_list_reducer_adding_a_todo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 177
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_15__lessons_javascript_redux_writing_a_todo_list_reducer_toggling_a_todo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 178
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_16__lessons_javascript_redux_reducer_composition_with_arrays_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 179
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_17__lessons_javascript_redux_reducer_composition_with_objects_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 180
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_18__lessons_javascript_redux_reducer_composition_with_combinereducers_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 181
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_19__lessons_javascript_redux_implementing_combinereducers_from_scratch_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 182
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_20__lessons_javascript_redux_react_todo_list_example_adding_a_todo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 183
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_21__lessons_javascript_redux_react_todo_list_example_toggling_a_todo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 184
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_22__lessons_javascript_redux_react_todo_list_example_filtering_todos_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 185
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_23__lessons_javascript_redux_extracting_presentational_components_todo_todolist_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 186
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 187
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_25__lessons_javascript_redux_extracting_container_components_filterlink_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 188
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_26__lessons_javascript_redux_extracting_container_components_visibletodolist_addtodo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 189
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_27__lessons_javascript_redux_passing_the_store_down_explicitly_via_props_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 190
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_28__lessons_javascript_redux_passing_the_store_down_implicitly_via_context_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 191
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_29__lessons_javascript_redux_passing_the_store_down_with_provider_from_react_redux_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 192
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_30__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_visibletodolist_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 193
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_31__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_addtodo_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 194
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_32__lessons_javascript_redux_generating_containers_with_connect_from_react_redux_footerlink_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 195
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_33__lessons_javascript_redux_extracting_action_creators_md__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 196
         }
       })));
     }
@@ -492,4 +416,4 @@ var _default = App;
 /***/ })
 
 })
-//# sourceMappingURL=5.867c9559ccde20c74299.hot-update.js.map
+//# sourceMappingURL=5.85c8ccbb0aab6201029b.hot-update.js.map
