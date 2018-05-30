@@ -1,37 +1,11 @@
 import { Component } from 'react'
-import styled, { hydrate, keyframes, css, injectGlobal } from 'react-emotion'
+import styled, { hydrate, injectGlobal } from 'react-emotion'
+import { css } from 'emotion'
 import { loadGetInitialProps } from 'next/dist/lib/utils'
 import Head from 'next/head'
-import SingleImmutableTree from '../lessons/javascript-redux-the-single-immutable-state-tree.md'
-import StateChangesWithActions from '../lessons/javascript-redux-describing-state-changes-with-actions.md'
-import PureAndImpureFunctions from '../lessons/javascript-redux-pure-and-impure-functions.md'
-import ReducerFunction from '../lessons/javascript-redux-the-reducer-function.md'
-import CounterReducer from '../lessons/javascript-redux-writing-a-counter-reducer-with-tests.md'
-import DispatchAndSubscribe from '../lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe.md'
-import ImplementStore from '../lessons/javascript-redux-implementing-store-from-scratch.md'
-import CounterExample from '../lessons/javascript-redux-react-counter-example.md'
-import AvoidingArrayMutations from '../lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread.md'
-import AvoidingObjectMutations from '../lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread.md'
-import TodoListReducerAddTodo from '../lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo.md'
-import TodoListReducerToggleTodo from '../lessons/javascript-redux-writing-a-todo-list-reducer-toggling-a-todo.md'
-import ReducerCompositionArrays from '../lessons/javascript-redux-reducer-composition-with-arrays.md'
-import ReducerCompositionObjects from '../lessons/javascript-redux-reducer-composition-with-objects.md'
-import ReducerCompositionCombine from '../lessons/javascript-redux-reducer-composition-with-combinereducers.md'
-import ImplementCombineReducers from '../lessons/javascript-redux-implementing-combinereducers-from-scratch.md'
-import AddTodo from '../lessons/javascript-redux-react-todo-list-example-adding-a-todo.md'
-import ToggleTodo from '../lessons/javascript-redux-react-todo-list-example-toggling-a-todo.md'
-import FilteringTodos from '../lessons/javascript-redux-react-todo-list-example-filtering-todos.md'
-import ExtractPresentationalTodoList from '../lessons/javascript-redux-extracting-presentational-components-todo-todolist.md'
-import ExtractPresentationalFilterLink from '../lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink.md'
-import ExtractContainerFilterLink from '../lessons/javascript-redux-extracting-container-components-filterlink.md'
-import ExtractContainerAddTodo from '../lessons/javascript-redux-extracting-container-components-visibletodolist-addtodo.md'
-import PassStoreViaProps from '../lessons/javascript-redux-passing-the-store-down-explicitly-via-props.md'
-import PassStoreViaContext from '../lessons/javascript-redux-passing-the-store-down-implicitly-via-context.md'
-import PassStoreViaProvider from '../lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux.md'
-import GenerateWithConnectTodoList from '../lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist.md'
-import GenerateWithConnectAddTodo from '../lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo.md'
-import GenerateWithConnectFooter from '../lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink.md'
-import ExtractActionCreators from '../lessons/javascript-redux-extracting-action-creators.md'
+import Lessons from '../components/Lessons'
+import codeStyles from '../components/CodeStyles'
+import CourseDescription from '../components/CourseDescription.md'
 
 let ReactGA
 if (process.browser) {
@@ -46,87 +20,19 @@ injectGlobal`
   html, body {
     padding: 3rem 1rem;
     margin: 0;
-    background: papayawhip;
+    background: white;
     min-height: 100%;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
   }
   img {
-    max-width: 800px;
+    max-width: 100%;
   }
   pre {
     background: #fafafa;
     padding: 25px;
   }
-  .hljs-comment,
-  .hljs-quote {
-    color: #969896;
-  }
-
-  /* Tomorrow Red */
-  .hljs-variable,
-  .hljs-template-variable,
-  .hljs-tag,
-  .hljs-name,
-  .hljs-selector-id,
-  .hljs-selector-class,
-  .hljs-regexp,
-  .hljs-deletion {
-    color: #cc6666;
-  }
-
-  /* Tomorrow Orange */
-  .hljs-number,
-  .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-literal,
-  .hljs-type,
-  .hljs-params,
-  .hljs-meta,
-  .hljs-link {
-    color: #de935f;
-  }
-
-  /* Tomorrow Yellow */
-  .hljs-attribute {
-    color: #f0c674;
-  }
-
-  /* Tomorrow Green */
-  .hljs-string,
-  .hljs-symbol,
-  .hljs-bullet,
-  .hljs-addition {
-    color: #b5bd68;
-  }
-
-  /* Tomorrow Blue */
-  .hljs-title,
-  .hljs-section {
-    color: #81a2be;
-  }
-
-  /* Tomorrow Purple */
-  .hljs-keyword,
-  .hljs-selector-tag {
-    color: #b294bb;
-  }
-
-  .hljs {
-    display: block;
-    overflow-x: auto;
-    background: #1d1f21;
-    color: #c5c8c6;
-    padding: 0.5em;
-  }
-
-  .hljs-emphasis {
-    font-style: italic;
-  }
-
-  .hljs-strong {
-    font-weight: bold;
-  }
+  ${codeStyles}
 `
 
 class App extends Component {
@@ -156,45 +62,51 @@ class App extends Component {
           />
           <title>Learn Redux with Dan Abramov</title>
         </Head>
+        <div
+          className={css`
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          `}
+        >
+          <div>
+            <h1>Learn Redux with Dan Abramov</h1>
+          </div>
+          <div>
+            <h3>Redux presents a sane and scalable way to manage complex state in your React applications.</h3>
+          </div>
 
-        <h1>Learn Redux with Dan Abramov</h1>
-        <p>
-          <a href="https://egghead.io/lessons/react-redux-the-single-immutable-state-tree?utm_source=microsite">
-            watch the screencasts on egghead.io
-          </a>
-        </p>
-        <div style={{ maxWidth: '825px' }}>
-          <SingleImmutableTree />
-          <StateChangesWithActions />
-          <PureAndImpureFunctions />
-          <ReducerFunction />
-          <CounterReducer />
-          <DispatchAndSubscribe />
-          <ImplementStore />
-          <CounterExample />
-          <AvoidingArrayMutations />
-          <AvoidingObjectMutations />
-          <TodoListReducerAddTodo />
-          <TodoListReducerToggleTodo />
-          <ReducerCompositionArrays />
-          <ReducerCompositionObjects />
-          <ReducerCompositionCombine />
-          <ImplementCombineReducers />
-          <AddTodo />
-          <ToggleTodo />
-          <FilteringTodos />
-          <ExtractPresentationalTodoList />
-          <ExtractContainerFilterLink />
-          <ExtractContainerFilterLink />
-          <ExtractContainerAddTodo />
-          <PassStoreViaProps />
-          <PassStoreViaContext />
-          <PassStoreViaProvider />
-          <GenerateWithConnectTodoList />
-          <GenerateWithConnectAddTodo />
-          <GenerateWithConnectFooter />
-          <ExtractActionCreators />
+          <div
+            className={css`
+              padding: 30px;
+            `}
+          >
+            <a
+              className={css`
+                background: black;
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 10px;
+              `}
+              href="https://egghead.io/lessons/react-redux-the-single-immutable-state-tree?utm_source=microsite"
+            >
+              watch the screencasts on egghead.io
+            </a>
+          </div>
+          <div
+            className={css`
+              flex: 1 1 320px;
+              max-width: 800px;
+              padding-top: 50px;
+            `}
+          >
+            <CourseDescription />
+          </div>
         </div>
+
+        <Lessons />
       </div>
     )
   }
