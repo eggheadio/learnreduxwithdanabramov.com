@@ -5,9 +5,16 @@
   "main": "index.js",
   "now": {
     "env": {
-      "GOOGLE_ANALYTICS": "UA-36512724-5"
+      "GOOGLE_ANALYTICS": "UA-36512724-5",
+      "NODE_ENV": "production"
     },
-    "alias": "learnreduxwithdanabramov.com"
+    "alias": "learnreduxwithdanabramov.com",
+    "scale": {
+      "sfo1": {
+        "min": 1,
+        "max": "auto"
+      }
+    }
   },
   "scripts": {
     "dev": "next",
