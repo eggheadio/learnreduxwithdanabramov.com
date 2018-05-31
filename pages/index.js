@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Lessons from '../components/Lessons'
 import codeStyles from '../components/CodeStyles'
 import CourseDescription from '../components/CourseDescription.md'
+import Eggo from '../components/Eggo'
 
 let ReactGA
 if (process.browser) {
@@ -103,15 +104,44 @@ class App extends Component {
           >
             <a
               className={css`
-                background: black;
-                color: white;
-                font-size: 14px;
                 text-decoration: none;
-                padding: 10px;
               `}
+              target="_blank"
               href="https://egghead.io/courses/getting-started-with-redux?utm_source=microsite"
             >
-              watch the screencasts on egghead.io
+              <div
+                className={css`
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  background: black;
+                  color: white;
+                  font-size: 14px;
+                  text-decoration: none;
+                  padding: 10px;
+                `}
+              >
+                <img
+                  className={css`
+                    width: 32px;
+                    height: 32px;
+                    padding-right: 7px;
+                  `}
+                  src="/static/eggo.svg"
+                  alt="egghead logo"
+                />{' '}
+                watch the screencasts on egghead.io
+              </div>
+            </a>
+          </div>
+          <div
+            className={css`
+              padding-top: 50px;
+            `}
+          >
+            <a href="https://egghead.io/courses/getting-started-with-redux?utm_source=microsite">
+              <img src="/static/og-image.jpg" alt="Get Started with Redux egghead course logo" />
             </a>
           </div>
           <div
