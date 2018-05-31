@@ -33,6 +33,7 @@ export default () => (
               `}
               href={`#${lesson.slug}`}
             >
+              {index < 10 && '0'}
               {index}. {capitalize(lesson.title)}
             </a>
           </li>
