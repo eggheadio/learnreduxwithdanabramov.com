@@ -1,12 +1,18 @@
 import { Component } from 'react'
-import styled, { hydrate, injectGlobal } from 'react-emotion'
-import { css } from 'emotion'
+import styled, { hydrate, injectGlobal, keyframes } from 'react-emotion'
+import { css, cx } from 'emotion'
 import { loadGetInitialProps } from 'next/dist/lib/utils'
 import Head from 'next/head'
 import Lessons from '../components/Lessons'
 import codeStyles from '../components/CodeStyles'
 import CourseDescription from '../components/CourseDescription.md'
 import Eggo from '../components/Eggo'
+import Animation from '../components/Animation'
+import Toggle from '../components/Toggle'
+import Scrollspy from 'react-scrollspy'
+import Button from '../components/Button'
+import SocialLinks from '../components/SocialLinks'
+
 
 let ReactGA
 if (process.browser) {
@@ -19,12 +25,12 @@ if (typeof window !== 'undefined') {
 
 injectGlobal`
   html, body {
-    padding: 3rem 1rem;
     margin: 0;
+    padding: 0;
     background: white;
     min-height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family:  -apple-system, Helvetica, system-ui, Arial, sans-serif;
+    font-size: 1rem;
   }
   img {
     max-width: 100%;
@@ -33,7 +39,71 @@ injectGlobal`
     background: #fafafa;
     padding: 25px;
   }
+  p {
+    line-height: 1.8rem;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 1rem;
+    opacity: 0.7;
+    line-height: 1.6rem;
+  }
+  h4 {
+
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  hr {
+    margin-top: 3rem;
+    background: #f1f1f1;
+    border-width: 0;
+    height: 1px;
+    width: 800px;
+  }
+
   ${codeStyles}
+`
+
+const breakpoints = {
+  small: 576,
+  medium: 768,
+  large: 992,
+  xLarge: 1200,
+  tallPhone: '(max-width: 360px) and (min-height: 740px)'
+}
+
+const mq = Object.keys(breakpoints).reduce(
+  (accumulator, label) => {
+    let prefix = typeof breakpoints[label] === 'string' ? '' : 'min-width:'
+    let suffix = typeof breakpoints[label] === 'string' ? '' : 'px'
+    accumulator[label] = cls =>
+      css`
+        @media (${prefix + breakpoints[label] + suffix}) {
+          ${cls};
+        }
+      `
+    return accumulator
+  },
+  {}
+)
+
+const WatchButton = styled('div')`
+${Button}`
+
+const h1 = css`
+${mq.medium(css` font-size: 3.2rem; line-height: 4rem; font-weight: 500; `)};
+font-size: 2.4rem; line-height: 3.2rem; 
+margin-bottom: 0;
 `
 
 class App extends Component {
@@ -49,7 +119,7 @@ class App extends Component {
     ReactGA.set({ page })
     ReactGA.pageview(page)
   }
-
+  
   render() {
     return (
       <div>
@@ -90,82 +160,96 @@ class App extends Component {
             align-items: center;
           `}
         >
-          <div>
-            <h1>Learn Redux with Dan Abramov</h1>
-          </div>
-          <div>
-            <h3>Redux presents a sane and scalable way to manage complex state in your React applications.</h3>
-          </div>
 
-          <div
-            className={css`
-              padding: 30px;
-            `}
-          >
+        <header 
+          className={css`
+          background-image: radial-gradient(circle farthest-corner at 50% 50%, #262333, #131119);
+          color: white;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          min-height: 640px;
+          padding-bottom: 8.5rem;
+        `}>
+
+        <Animation speed='6s' />
+
+          <div className={css`
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 520px;
+            padding: 0 2rem;
+          `}>
+
+          <h1 className={h1}>
+            Learn Redux with Dan Abramov
+          </h1>
+
+          <h3>
+            Redux presents a sane and scalable way to manage complex state in your React applications.
+          </h3>
+
             <a
               className={css`
+                margin-top: 2rem;
                 text-decoration: none;
               `}
               target="_blank"
               href="https://egghead.io/courses/getting-started-with-redux?utm_source=microsite"
             >
-              <div
-                className={css`
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center;
-                  align-items: center;
-                  background: black;
-                  color: white;
-                  font-size: 14px;
-                  text-decoration: none;
-                  padding: 10px;
+              <WatchButton>
+                <span className={css`
+                padding-left: 10px;
                 `}
-              >
-                <img
-                  className={css`
-                    width: 32px;
-                    height: 32px;
-                    padding-right: 7px;
-                  `}
-                  src="/static/eggo.svg"
-                  alt="egghead logo"
-                />{' '}
-                watch the screencasts on egghead.io
-              </div>
+                >Watch the Screencasts on egghead.io
+                </span>
+              </WatchButton>
             </a>
-          </div>
-          <div
-            className={css`
-              padding-top: 50px;
-            `}
-          >
-            <a href="https://egghead.io/courses/getting-started-with-redux?utm_source=microsite">
-              <img src="/static/og-image.jpg" alt="Get Started with Redux egghead course logo" />
-            </a>
-          </div>
+         </div>
+          </header>
+
+         <div className={css`
+         background: white;
+         box-shadow: 0 20px 100px -30px rgba(0,0,0,0.3);
+         margin-top: -2rem;
+         padding: 1rem 1rem 1rem 1rem;
+         ${mq.medium(css` padding: 2.5rem 4rem 2.5rem 4rem; `)};
+         border-radius: 3px;
+         `}>
           <div
             className={css`
               flex: 1 1 320px;
-              max-width: 800px;
-              padding-top: 50px;
+              max-width: 700px;
+              &::first-letter {
+                initial-letter: 2;
+              }
             `}
           >
             <CourseDescription />
           </div>
+          </div>
           <div
             className={css`
+              margin-top: 3.5rem;
               display: flex;
-              max-width: 400px;
-              padding-top: 50px;
+              flex-direction: column;
               justify-content: center;
               align-items: center;
+              max-width: 800px;
+              padding: 0 3rem;
             `}
           >
             <img
               className={css`
-                width: 120px;
-                height: 120px;
+                width: 160px;
+                height: 160px;
+                border-radius: 100%;
+                box-shadow: 0 20px 100px -30px rgba(0,0,0,0.5);
               `}
               src="/static/dan-abramov-photo.png"
               alt="Dan Abramov"
@@ -173,14 +257,40 @@ class App extends Component {
             <div
               className={css`
                 flex-grow: 2;
-                padding: 15px;
+                padding: 20px;
               `}
             />
-            Dan Abramov works at Facebook on React. He is the co-author of Redux and Create React App.
+            <div className={css`text-align: center;`}>
+            <h4 className={css`
+                  margin:0; 
+                  padding:0; 
+                  font-size: 1.5rem; 
+                  line-height: 2rem;
+            `}>
+                  Dan Abramov works at Facebook on React
+            </h4>
+            <p className={css`margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.8;`}>He is the co-author of Redux and Create React App</p>
+            <div className={css`
+                margin-top: 1rem;
+            `}>
+            <SocialLinks />
+            </div>
+            </div>
           </div>
+          <hr/>
         </div>
+          
 
+<Scrollspy items={['showMenu']}  currentClassName={css``}>
+<div className={css``}>
+<Toggle />
+</div>
+</Scrollspy>
+
+        <div id="showMenu">
         <Lessons />
+        </div>
+        
       </div>
     )
   }

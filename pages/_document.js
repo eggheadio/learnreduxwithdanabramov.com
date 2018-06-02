@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <link href="https://fonts.googleapis.com/css?family=Poppins:300,500" rel="stylesheet" />
         </Head>
         <body>
           <Main />
