@@ -45,7 +45,7 @@ export default () => (
   >
   <div className={css`
   max-width: 800px;
-  padding-top: 2rem;
+  padding: 2rem 0;
   h4 {
   text-align: center;
   ${mq.medium(css`

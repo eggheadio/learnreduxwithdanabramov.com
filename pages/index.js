@@ -51,6 +51,9 @@ injectGlobal`
   }
   p {
     line-height: 1.8rem;
+    code {
+      font-size: 1.2rem; 
+    }
   }
   h1, h2, h3, h4 {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;

@@ -1,6 +1,3 @@
-import styled from 'react-emotion'
-import { css } from 'emotion'
-
 export default `
     display: flex;
     font-weight: 400;
