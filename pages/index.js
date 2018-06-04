@@ -65,6 +65,16 @@ injectGlobal`
     opacity: 0.7;
     line-height: 1.6rem;
   }
+  h4 {
+    font-weight: 500;
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 0;
+  }
   ul {
     margin: 0;
     padding: 0;

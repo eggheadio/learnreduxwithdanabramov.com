@@ -55,7 +55,7 @@ export default () => (
           list-style-type: none;
           column-count: 1;
           ${mq.medium(css`
-            column-count: 2;
+            column-count: 1;
             column-fill: balance;
           `)};
         `}
@@ -71,17 +71,29 @@ export default () => (
           key={lesson.title}
         >
           <li className={css`
-          transition: all 250ms ease-in;
+          transition: all 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
           line-height: 1.2rem;
+          background: white;
           padding: 10px;
+          font-size: 1rem;
+          border-radius: 5px;
+          border-top: 1px solid #f1f1f1;
           &:hover {
+            box-shadow: 0 0px 40px -5px rgba(0,0,0,0.1);
+            transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: scale(1.02);
+            z-index: 999;
+            border-top: 1px solid transparent;
+            h5 {
             transition: all 250ms ease-out;
-            box-shadow: 0 5px 20px -5px rgba(0,0,0,0.1);
             color: #6A30F2;
           }
+          }
+          
           `}>            
-              <span className={css`opacity: 0.6; font-size: 0.65rem;`}>{index < 10 && '0'}
-              {index}.</span> {capitalize(lesson.title)}
+               <h5><span className={css`font-size: 0.75rem; color: #6A30F2;`}>{index < 10 && '0'}
+              {index}.</span> {capitalize(lesson.title)}</h5>
+              <p className={css`font-size: 0.8rem; line-height: 1.2rem; opacity: 0.8; margin: 0; padding:0;`}>{lesson.summary}</p>
           </li>
           </a>
           
@@ -101,7 +113,7 @@ export default () => (
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 50px 1rem 0 1rem;
+            padding: 1rem;
             max-width: 800px;
           `}
         >
