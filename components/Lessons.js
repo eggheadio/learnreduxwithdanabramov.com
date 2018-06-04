@@ -68,6 +68,7 @@ export default () => (
             font-size: 0.8rem;
           `}
           href={`#${lesson.slug}`}
+          key={lesson.title}
         >
           <li className={css`
           transition: all 250ms ease-in;
@@ -100,7 +101,7 @@ export default () => (
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-top: 50px;
+            padding: 50px 1rem 0 1rem;
             max-width: 800px;
           `}
         >

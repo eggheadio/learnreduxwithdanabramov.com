@@ -38,6 +38,16 @@ injectGlobal`
   pre {
     background: #fafafa;
     padding: 25px;
+    max-width: 90vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+  pre:focus {
+    width: min-content;
+  }
+  code {
+    max-width: 90vw;
+    word-wrap: break-word;
   }
   p {
     line-height: 1.8rem;
@@ -55,9 +65,6 @@ injectGlobal`
     opacity: 0.7;
     line-height: 1.6rem;
   }
-  h4 {
-
-  }
   ul {
     margin: 0;
     padding: 0;
@@ -68,7 +75,7 @@ injectGlobal`
     background: #f1f1f1;
     border-width: 0;
     height: 1px;
-    width: 800px;
+    max-width: 100%;
   }
 
   ${codeStyles}
@@ -172,6 +179,9 @@ class App extends Component {
           align-items: center;
           min-height: 640px;
           padding-bottom: 8.5rem;
+          overflow: hidden;
+          position: relative;
+          z-index: 1;
         `}>
 
         <Animation speed='6s' />
@@ -206,7 +216,8 @@ class App extends Component {
                 <span className={css`
                 padding-left: 10px;
                 `}
-                >Watch the Screencasts on egghead.io
+                >
+                Watch the Screencasts on egghead.io
                 </span>
               </WatchButton>
             </a>
@@ -217,9 +228,10 @@ class App extends Component {
          background: white;
          box-shadow: 0 20px 100px -30px rgba(0,0,0,0.3);
          margin-top: -2rem;
-         padding: 1rem 1rem 1rem 1rem;
+         padding: 2rem 1rem 1rem 1rem;
          ${mq.medium(css` padding: 2.5rem 4rem 2.5rem 4rem; `)};
          border-radius: 3px;
+         z-index: 2;
          `}>
           <div
             className={css`
@@ -279,18 +291,8 @@ class App extends Component {
           </div>
           <hr/>
         </div>
-          
-
-<Scrollspy items={['showMenu']}  currentClassName={css``}>
-<div className={css``}>
-<Toggle />
-</div>
-</Scrollspy>
-
-        <div id="showMenu">
+        <Toggle />
         <Lessons />
-        </div>
-        
       </div>
     )
   }

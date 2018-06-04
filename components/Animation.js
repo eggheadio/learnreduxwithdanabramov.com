@@ -4,10 +4,10 @@ import { css, cx } from 'emotion'
 
 const aniContainer = keyframes`
   from {
-    transform: rotate(-30deg);
+    transform: rotate(-10deg);
   }
   to {
-    transform: rotate(-220deg);
+    transform: rotate(-240deg);
   }
 `
 const aniBitColor = keyframes`
@@ -99,7 +99,6 @@ to, 100% {
 export default ({ speed }) => 
     { 
     const Speed = '6s'
-
 return ( 
   <div className={css`
     display: flex;
@@ -110,12 +109,15 @@ return (
   <div className={css`
     animation: ${aniContainer} ${speed} linear infinite;
     transform-origin: center;
-    width: 410px;
-    height: 410px;
+    width: 320px;
+    height: 340px;
+    /* width: 410px;
+    height: 410px; */
     background: transparent;
     position: absolute;
     top: 0;
-    margin-top: -285px;
+    margin-top: -185px;
+    /* margin-top: -285px; */
     z-index:1;
     `}>
     <div className={css`
