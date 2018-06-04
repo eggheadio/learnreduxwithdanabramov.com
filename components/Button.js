@@ -46,7 +46,7 @@ export default `
     ::before {
       transition: all 550ms cubic-bezier(1, 0, 0, 1);
       background-position: center -30px;
-      filter: blur(10px);
+      
     }
     ::after {
       transition: all 550ms cubic-bezier(1, 0, 0, 1);

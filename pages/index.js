@@ -80,14 +80,6 @@ injectGlobal`
     padding: 0;
     color: black;
   }
-  hr {
-    margin-top: 3rem;
-    background: #f1f1f1;
-    border-width: 0;
-    height: 1px;
-    max-width: 100%;
-  }
-
   ${codeStyles}
 `
 
@@ -299,7 +291,6 @@ class App extends Component {
             </div>
             </div>
           </div>
-          <hr/>
         </div>
         <Toggle />
         <Lessons />

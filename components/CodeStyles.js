@@ -1,71 +1,75 @@
 export default `
+
+/*
+
+Colorbrewer theme
+Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
+Ported by Fabrício Tavares de Oliveira
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fff;
+}
+
+.hljs,
+.hljs-subst {
+  color: #000;
+}
+
+.hljs-string,
+.hljs-meta,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-addition {
+  color: #756bb1;
+}
+
 .hljs-comment,
-  .hljs-quote {
-    color: #969896;
-  }
+.hljs-quote {
+  color: #636363;
+}
 
-  /* Tomorrow Red */
-  .hljs-variable,
-  .hljs-template-variable,
-  .hljs-tag,
-  .hljs-name,
-  .hljs-selector-id,
-  .hljs-selector-class,
-  .hljs-regexp,
-  .hljs-deletion {
-    color: #cc6666;
-  }
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-bullet,
+.hljs-link {
+  color: #31a354;
+}
 
-  /* Tomorrow Orange */
-  .hljs-number,
-  .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-literal,
-  .hljs-type,
-  .hljs-params,
-  .hljs-meta,
-  .hljs-link {
-    color: #de935f;
-  }
+.hljs-deletion,
+.hljs-variable {
+  color: #88f;
+}
 
-  /* Tomorrow Yellow */
-  .hljs-attribute {
-    color: #f0c674;
-  }
 
-  /* Tomorrow Green */
-  .hljs-string,
-  .hljs-symbol,
-  .hljs-bullet,
-  .hljs-addition {
-    color: #b5bd68;
-  }
 
-  /* Tomorrow Blue */
-  .hljs-title,
-  .hljs-section {
-    color: #81a2be;
-  }
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-built_in,
+.hljs-doctag,
+.hljs-type,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-strong {
+  color: #3182bd;
+}
 
-  /* Tomorrow Purple */
-  .hljs-keyword,
-  .hljs-selector-tag {
-    color: #b294bb;
-  }
+.hljs-emphasis {
+  font-style: italic;
+}
 
-  .hljs {
-    display: block;
-    overflow-x: auto;
-    background: #1d1f21;
-    color: #c5c8c6;
-    padding: 0.5em;
-  }
+.hljs-attribute {
+  color: #e6550d;
+}
 
-  .hljs-emphasis {
-    font-style: italic;
-  }
-
-  .hljs-strong {
-    font-weight: bold;
-  }
 `

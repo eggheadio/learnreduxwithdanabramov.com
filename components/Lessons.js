@@ -10,7 +10,6 @@ const LessonWrapper = styled('div')`
   flex: 1 1;
   max-width: 800px;
 `
-
 const breakpoints = {
   small: 576,
   medium: 768,
@@ -34,7 +33,6 @@ const mq = Object.keys(breakpoints).reduce(
   {}
 )
 
-
 export default () => (
   <div
     className={css`
@@ -47,6 +45,13 @@ export default () => (
   >
   <div className={css`
   max-width: 800px;
+  padding-top: 2rem;
+  h4 {
+  text-align: center;
+  ${mq.medium(css`
+            text-align: left;
+          `)};
+        }
   `}>
      <h4>Table of Contents</h4>
     <div>
@@ -101,7 +106,7 @@ export default () => (
       </ul>
     </div> 
     </div>
-    <hr/>
+    
     {lessons.map((lesson, index) => {
       const Lesson = lesson.component
       return (
@@ -159,11 +164,9 @@ export default () => (
               </a>
           
           </div>
-          
           <LessonWrapper>
             <Lesson/>
           </LessonWrapper>
-          
         </article>
       )
     })}
