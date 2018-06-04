@@ -201,7 +201,7 @@ return (
       border-radius: 50px;
       `}></div>
 
-    <img src="/static/redux.svg" width="300" 
+    <img src="/static/redux.png" width="300" 
       className={css`
         position: absolute;
         top: 0;
