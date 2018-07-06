@@ -45,6 +45,9 @@ injectGlobal`
   pre:focus {
     width: min-content;
   }
+  a {
+    color: #6A30F2;
+  }
   code {
     max-width: 90vw;
     word-wrap: break-word;
@@ -52,7 +55,8 @@ injectGlobal`
   p {
     line-height: 1.8rem;
     code {
-      font-size: 1.2rem; 
+      font-size: 1.1rem;
+      color: #6A30F2;
     }
   }
   h1, h2, h3, h4 {
@@ -164,7 +168,7 @@ class App extends Component {
           />
           <meta property="og:url" content="https://learnreduxwithdanabramov.com/" />
         </Head>
-        <div
+        <section
           className={css`
             display: flex;
             flex-direction: column;
@@ -286,7 +290,9 @@ class App extends Component {
             `}>
                   Dan Abramov works at Facebook on React
             </h4>
-            <p className={css`margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.8;`}>He is the co-author of Redux and Create React App</p>
+            <p className={css`margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.8;`}>
+            He is the co-author of Redux and Create React App
+            </p>
             <div className={css`
                 margin-top: 1rem;
             `}>
@@ -294,9 +300,13 @@ class App extends Component {
             </div>
             </div>
           </div>
-        </div>
+        </section>
         <Toggle />
+        <section>
+          <article>
         <Lessons />
+        </article>
+        </section>
       </div>
     )
   }

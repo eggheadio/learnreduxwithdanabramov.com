@@ -111,13 +111,10 @@ return (
     transform-origin: center;
     width: 320px;
     height: 340px;
-    /* width: 410px;
-    height: 410px; */
     background: transparent;
     position: absolute;
     top: 0;
     margin-top: -185px;
-    /* margin-top: -285px; */
     z-index:1;
     `}>
     <div className={css`

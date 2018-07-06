@@ -16,7 +16,6 @@ to {
   opacity: 1;
 }
 `
-
 const crossAnimation = keyframes`
 from {
   transform: scale(0, 0);
@@ -27,8 +26,6 @@ to {
   opacity: 1;
 }
 `
-
-
 const breakpoints = {
   small: 576,
   medium: 768,
@@ -85,7 +82,6 @@ render() {
           z-index: 999;
           ${mq.medium(css`margin-left: 20px; margin-top: 20px;`)};
           `}>
-          
         <button onClick={this.handleClick} className={css`
         border-radius: 100%;
         box-shadow: 0 0 10px -2px rgba(0,0,0,0.4);
@@ -102,15 +98,11 @@ render() {
         `}>
           {this.state.isToggleOn ? (<img src="../static/menu.svg" width="16px" height="16px" />) : (<img src="../static/cross.svg" width="16px" height="16px" className={css`animation: ${crossAnimation} 250ms ease 1;`} />)}
         </button>
-       
-
         <div className={css` 
         ${this.state.isToggleOn ? `visibility: hidden;` : 
         `visibility: visible; animation: ${openAnimation} 250ms ease-in-out 1;`}
         `}>
-
         <ToC />
-        
         </div>
         </div>
         </ClickOutside>

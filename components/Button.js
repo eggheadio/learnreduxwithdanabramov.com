@@ -1,3 +1,16 @@
+import styled, { keyframes } from 'react-emotion'
+
+const buttonAnimation = keyframes`
+  from, 0% {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+  to, 100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+`
+
 export default `
     display: flex;
     font-weight: 400;
@@ -43,11 +56,24 @@ export default `
     ::before {
       transition: all 550ms cubic-bezier(1, 0, 0, 1);
       background-position: center -30px;
-      
     }
     ::after {
       transition: all 550ms cubic-bezier(1, 0, 0, 1);
       background-position: center;
+    }
+    span::before {
+      content: '';
+      background: white;
+      border-radius: 100%;
+      filter: blur(5px);
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      animation: ${buttonAnimation} 450ms ease 1;
+      display: inline-block;
+      margin-left: 25px;
+      left: 0;
+      position: absolute;
     }
     }
     `

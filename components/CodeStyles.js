@@ -1,12 +1,6 @@
 export default `
 
-/*
-
-Colorbrewer theme
-Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
-Ported by Fabrício Tavares de Oliveira
-
-*/
+/* Light Redux Theme :] */
 
 .hljs {
   display: block;
@@ -26,12 +20,12 @@ Ported by Fabrício Tavares de Oliveira
 .hljs-template-tag,
 .hljs-template-variable,
 .hljs-addition {
-  color: #756bb1;
+  color: #6A30F2;
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #636363;
+  color: #635D70;
 }
 
 .hljs-number,
@@ -39,15 +33,13 @@ Ported by Fabrício Tavares de Oliveira
 .hljs-literal,
 .hljs-bullet,
 .hljs-link {
-  color: #31a354;
+  color: #30A354;
 }
 
 .hljs-deletion,
 .hljs-variable {
-  color: #88f;
+  color: #8888FF;
 }
-
-
 
 .hljs-keyword,
 .hljs-selector-tag,
@@ -61,7 +53,7 @@ Ported by Fabrício Tavares de Oliveira
 .hljs-selector-id,
 .hljs-selector-class,
 .hljs-strong {
-  color: #3182bd;
+  color: #34A8E4;
 }
 
 .hljs-emphasis {
@@ -69,7 +61,7 @@ Ported by Fabrício Tavares de Oliveira
 }
 
 .hljs-attribute {
-  color: #e6550d;
+  color: #F2304C;
 }
 
 `

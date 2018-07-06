@@ -46,22 +46,15 @@ export default () => (
       ${mq.medium(css`
       width: 360px; 
       `)};
-
       ::-webkit-scrollbar {
         width: 8px;
-        
       }
-      /* Track */
       ::-webkit-scrollbar-track {
         background: white; 
       }
-
-      /* Handle */
       ::-webkit-scrollbar-thumb {
         background: #f1f1f1; 
       }
-
-      /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
         background: lightgray; 
       }
@@ -92,8 +85,6 @@ export default () => (
             </a>
             </Scrollspy>
           </li>
-         
-          
         ))}
       </ul>
 

@@ -43,7 +43,7 @@ export default () => (
       padding: 1rem;
     `}
   >
-  <div className={css`
+  <section className={css`
   max-width: 800px;
   padding: 2rem 0;
   h4 {
@@ -105,7 +105,7 @@ export default () => (
         ))}
       </ul>
     </div> 
-    </div>
+    </section>
     
     {lessons.map((lesson, index) => {
       const Lesson = lesson.component
@@ -122,6 +122,7 @@ export default () => (
             max-width: 800px;
           `}
         >
+        
           <div
               className={css`
               display: column;
@@ -134,7 +135,8 @@ export default () => (
               `)};
             `}
           >
-              <h2 id={lesson.slug} className={css`line-height: 2.2rem; max-width: 580px;`}>
+          
+              <h1 id={lesson.slug} className={css`line-height: 2.2rem; max-width: 580px;`}>
                 <span
                   className={css`
                     color: #6A30F2;
@@ -143,7 +145,7 @@ export default () => (
                   {index}.
                 </span>{' '}
                 {capitalize(lesson.title)}
-              </h2>
+              </h1>
               <a
                 className={css`
                   text-decoration: none;
@@ -162,13 +164,17 @@ export default () => (
                 </WatchButton>
                 </div>
               </a>
-          
           </div>
           <LessonWrapper>
+          <p>
             <Lesson/>
+            </p>
           </LessonWrapper>
+          
         </article>
       )
     })}
+    
   </div>
+  
 )
